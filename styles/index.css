@@ -574,3 +574,50 @@ body{
     }
 
 }
+
+footer{
+    background: #00008b;
+    color: white;
+    padding: 50px 10px;
+    font-size: 18px;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+footer ul li {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.8;
+}
+footer ul li h3{
+    margin-bottom: 20px;
+}
+footer input{
+    background: white;
+    font-size: 14px;
+    height: 40px;
+    width: 200px;
+    font-family: 'lato-reg';
+    padding-left: 10px;
+    outline: 0;
+    border: 0;
+}
+footer button{   
+    font-size: 14px;
+    height: 40px;
+    padding: 0px 10px;
+    font-family: 'lato-reg';
+    outline: 0;
+    border: 0;
+    background: #04045a;
+    color: white;
+}
+                        
+                       
