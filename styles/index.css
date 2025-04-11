@@ -334,6 +334,7 @@ body{
     font-size: 18px;
     color: #414042;
     margin-top: 10px;
+    line-height: 2;
 }
 .g-header{
     background: #00008b;
@@ -468,6 +469,9 @@ body{
 .services{
     margin-top: 70px;
 }
+.services .ser{
+    position: relative;
+}
 .services .text-con{
     background: #f1f1f2;
     padding-bottom: 50px;
@@ -490,6 +494,12 @@ body{
     gap: 50px;
     margin-top: -40px;
     padding: 20px;
+    position: relative;
+}
+.services ul > img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 .services ul li{
     width: 300px;
@@ -618,6 +628,11 @@ footer button{
     border: 0;
     background: #04045a;
     color: white;
+}
+@media screen and (max-width: 500px) {
+    footer{
+        font-size: 16px;
+    }
 }
                         
                        
