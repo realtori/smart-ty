@@ -319,6 +319,7 @@ body{
     position: absolute;
     right: -10px;
     z-index: 1;
+    opacity: 0.1;
 }
 .content{
     max-width: 1200px;
@@ -463,6 +464,9 @@ body{
     .about .content a{
         font-size: 16px;
     }
+    .about .flex span img{
+        width: 20px;
+    }
 }
 
 /* services */
@@ -492,11 +496,15 @@ body{
     justify-content: center;
     flex-wrap: wrap;
     gap: 50px;
-    margin-top: -40px;
-    padding: 20px;
+    margin-top: -50px;
+    padding: 20px 20px 60px 20px;
+    position: relative;
+    
+}
+.services .ul-con{
     position: relative;
 }
-.services ul > img{
+.services .ul-con > img{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -584,6 +592,94 @@ body{
     }
 
 }
+
+/* premiere */
+.premiere{
+    background: #000000;
+    overflow: hidden;
+    position: relative;
+    padding: 70px 0px;
+}
+.premiere > img{
+    position: absolute;
+    left: 15%;
+}
+.premiere .text{
+    line-height: 20px;
+}
+.premiere .text p:first-child{
+    color: #00AEEF;
+    font-family: 'lato-reg';
+    font-size: 18px;
+}
+.premiere .text h3{
+    color: white;
+    font-family: 'pop-semi';
+    font-size: 28px;
+    margin-top: 10px;
+}
+.premiere .text p:nth-child(3){
+    color: white;
+    font-family: 'lato-reg';
+    margin: 20px 0px;
+    font-size: 18px;
+}
+.premiere .text{
+    max-width: 400px;
+    line-height: 1.6;
+    margin-left: 20px;
+}
+.premiere .text a{
+    color: #00008b;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    background: white;
+    transition: 0.4s ease;
+}
+.premiere .text a:hover{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    background: #00008b;
+}
+.premiere .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+}
+.premiere .content img{
+    max-width: 400px;
+}
+
+@media screen and (max-width: 768px) {
+    .premiere .content{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    .premiere .content img{
+        max-width: 350px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .premiere .content{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    .premiere .content img{
+        max-width: 90%;
+        margin-left: 20px;
+    }
+}
+
+
+
 
 footer{
     background: #00008b;
