@@ -1378,3 +1378,31 @@ footer .footer-bottom span{
         font-size: 16px;
     }
 }
+
+.product .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 10px 100px 10px;
+}
+.product .content p{
+    font-family: 'pop-semi';
+    font-size: 18px;
+    text-align: center;
+    max-width: 300px;
+    margin: 10px 10px 30px 10px;
+}
+.product .content span a{
+    padding: 10px 20px;
+    display: inline-block;
+    background: #00008b;
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+}
+@media screen and (max-width: 500px) {
+    .product .content img{
+        width: 80%;
+    }
+}
